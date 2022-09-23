@@ -2,24 +2,25 @@ import words from "../services/words";
 import styled from 'styled-components';
 import { useState } from "react";
 
-function start(word, setShow) {
-    console.log(word);
+function start(word, setShow, setKick) {
+    const newWord = word.split("");
     setShow(false);
+    setKick(newWord);
 }
 
-function Word({word, setShow}) {
+function Word({word, setShow, setKick}) {
     return(
-        <WordBox onClick={() => start(word, setShow)}>{word}</WordBox>
+        <WordBox onClick={() => start(word, setShow, setKick)}>{word}</WordBox>
     )
 }
 
-export default function Choice() {
+export default function Choice({setKick}) {
     const [show, setShow] = useState(false)
     return (
         <>
             <Button onClick={() => setShow(!show)}>Escolher palavra</Button>
             <WordContainer show={show}>
-                {words.map((word, i) => <Word key={i} word={word} setShow={setShow}/>)}
+                {words.map((word, i) => <Word key={i} word={word} setShow={setShow} setKick={setKick}/>)}
             </WordContainer>
         </>
     )
