@@ -13,9 +13,7 @@ export default function Gallow() {
     const forca = [forca0, forca1, forca2, forca3, forca4, forca5, forca6];
     const [gallow, setGallow] = useState(0);
     return (
-        <>
-            <Image src={forca[gallow]} alt={`forca${gallow}`} />
-        </>
+        <Image src={forca[gallow]} alt={`forca${gallow}`} />
     )
 }
 

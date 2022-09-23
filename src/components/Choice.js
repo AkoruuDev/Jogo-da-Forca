@@ -36,6 +36,7 @@ const WordContainer = styled.div`
     position: fixed;
     top: calc(50vh - 45vh);
     left: calc(50vh - 45vh);
+    z-index: 1;
 
     display: ${props => props.show ? 'flex' : 'none'};
     flex-direction: row;
