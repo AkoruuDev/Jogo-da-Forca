@@ -2,21 +2,17 @@ import styled from "styled-components"
 
 import alphabet from "../services/alphabet.js"
 
-function tryThese(letter) {
-    console.log(letter)
-}
-
-function Alphabet({letter}) {
+function Alphabet({letter, setTheseLetter}) {
     return (
-        <Letter onClick={() => tryThese(letter)}>{letter}</Letter>
+        <Letter onClick={() => setTheseLetter(letter)}>{letter}</Letter>
     )
 }
 
-export default function Keyboard({kick}) {
+export default function Keyboard({kick, setTheseLetter}) {
     console.log(kick)
     return (
         <AlphabetConteiner>
-            {alphabet.map((letter, i) => <Alphabet key={i} letter={letter} />)}            
+            {alphabet.map((letter, i) => <Alphabet key={i} letter={letter} setTheseLetter={setTheseLetter} />)}            
         </AlphabetConteiner>
     )
 }

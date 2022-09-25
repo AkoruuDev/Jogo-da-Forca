@@ -12,13 +12,15 @@ export default function App() {
     const random = Math.floor(Math.random() * words.length);
     const word = words[random].split("");
     const [kick, setKick] = useState(word);
+    const [theseLetter, setTheseLetter] = useState("");
+    
     return (
         <>
             <GlobalStyle />
             <Choice setKick={setKick}/>
             <Gallow />
-            <Keyboard kick={kick} />
-            <Kick kick={kick}/>
+            <Keyboard kick={kick} setTheseLetter={setTheseLetter} />
+            <Kick kick={kick} theseLetter={theseLetter} setTheseLetter={setTheseLetter} />
         </>
     )
 }
