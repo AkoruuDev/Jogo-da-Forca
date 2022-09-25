@@ -2,13 +2,18 @@ import styled from "styled-components"
 
 import alphabet from "../services/alphabet.js"
 
+function tryThese(letter) {
+    console.log(letter)
+}
+
 function Alphabet({letter}) {
     return (
-        <Letter>{letter}</Letter>
+        <Letter onClick={() => tryThese(letter)}>{letter}</Letter>
     )
 }
 
-export default function Keyboard() {
+export default function Keyboard({kick}) {
+    console.log(kick)
     return (
         <AlphabetConteiner>
             {alphabet.map((letter, i) => <Alphabet key={i} letter={letter} />)}            
@@ -19,7 +24,6 @@ export default function Keyboard() {
 const AlphabetConteiner = styled.div`
     width: 80vw;
     height: 30vh;
-    // background-color: red; // ---------------------------
 
     display: flex;
     flex-wrap: wrap;

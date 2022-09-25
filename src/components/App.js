@@ -17,7 +17,7 @@ export default function App() {
             <GlobalStyle />
             <Choice setKick={setKick}/>
             <Gallow />
-            <Keyboard />
+            <Keyboard kick={kick} />
             <Kick kick={kick}/>
         </>
     )
