@@ -11,7 +11,7 @@ import forca6 from "../assets/forca6.png";
 export default function Gallow({ gallow }) {
     const forca = [forca0, forca1, forca2, forca3, forca4, forca5, forca6];
     return (
-        <Image src={forca[gallow]} alt={`forca${gallow}`} />
+        <Image data-identifier="game-image" src={forca[gallow]} alt={`forca${gallow}`} />
     )
 }
 

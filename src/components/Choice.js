@@ -18,9 +18,9 @@ export default function Choice({setKick}) {
     const [show, setShow] = useState(false)
     return (
         <>
-            <Button onClick={() => {
-                //setShow(!show)
-                window.location.reload()
+            <Button data-identifier="choose-word" onClick={() => {
+                // setShow(!show); // Comente a linha de baixo se descomentar esta linha
+                window.location.reload();
             }}>Escolher palavra</Button>
             <WordContainer show={show}>
                 {words.map((word, i) => <Word key={i} word={word} setShow={setShow} setKick={setKick}/>)}

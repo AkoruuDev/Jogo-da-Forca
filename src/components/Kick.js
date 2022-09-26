@@ -37,6 +37,7 @@ export default function Kick({ kick, theseLetter, setTheseLetter, gallow, setGal
         <KickWordBox>
             {kick.map(
                 (letter, i) => <KickWord
+                    data-identifier="word"
                     key={i}
                     letter={letter}
                     theseLetter={theseLetter}

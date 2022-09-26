@@ -8,8 +8,8 @@ function Alphabet({letter, setTheseLetter}) {
 
     return (
         <>{disable ?
-            <DisableLetter>{letter}</DisableLetter> :
-            <Letter onClick={() => {
+            <DisableLetter data-identifier="letter" >{letter}</DisableLetter> :
+            <Letter data-identifier="letter" onClick={() => {
                 setTheseLetter(letter)
                 setDisable(true)
             }}>{letter}</Letter>}</>
@@ -24,8 +24,8 @@ export default function Keyboard({kick, setTheseLetter}) {
             {alphabet.map((letter, i) => <Alphabet key={i} letter={letter} setTheseLetter={setTheseLetter} />)}
             </Keys>
             <ToKick>
-                <Input type='text' placeholder='já sei a palavra!' />
-                <Button>Chutar</Button>
+                <Input data-identifier="type-guess" type='text' placeholder='já sei a palavra!' />
+                <Button data-identifier="guess-button">Chutar</Button>
             </ToKick>          
         </AlphabetConteiner>
     )
