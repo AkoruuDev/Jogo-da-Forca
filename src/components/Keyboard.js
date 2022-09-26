@@ -1,10 +1,18 @@
+import { useState } from "react"
 import styled from "styled-components"
 
 import alphabet from "../services/alphabet.js"
 
 function Alphabet({letter, setTheseLetter}) {
+    const [disable, setDisable] = useState(false);
+
     return (
-        <Letter onClick={() => setTheseLetter(letter)}>{letter}</Letter>
+        <>{disable ?
+            <DisableLetter>{letter}</DisableLetter> :
+            <Letter onClick={() => {
+                setTheseLetter(letter)
+                setDisable(true)
+            }}>{letter}</Letter>}</>
     )
 }
 
@@ -104,4 +112,18 @@ const Letter = styled.div`
         background-color: #DCDCDC;
         box-shadow: 0 4px 10px 2px gray;
     }
+`
+
+const DisableLetter = styled.div`
+    width: 30px;
+    height: 30px;
+    margin: 20px;
+    background-color: #696969;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
 `
