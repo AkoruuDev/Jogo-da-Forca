@@ -32,7 +32,6 @@ export default function Kick({ kick, theseLetter, setTheseLetter, gallow, setGal
         }
     }, [theseLetter])    
 
-    console.log(kick)
     return (
         <KickWordBox>
             {kick.map(

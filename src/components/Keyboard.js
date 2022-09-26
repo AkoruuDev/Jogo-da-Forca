@@ -17,7 +17,6 @@ function Alphabet({letter, setTheseLetter}) {
 }
 
 export default function Keyboard({kick, setTheseLetter}) {
-    console.log(kick)
     return (
         <AlphabetConteiner>
             <Keys>
