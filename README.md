@@ -2,7 +2,7 @@
 
 Projeto com a proposta inicial de criar um jogo da forca simples para se divertir
 
-<a href="jogo-da-forca-nn87q9z6b-akoruudev.vercel.app"><img width="600" src="./images/play now.png"></a>
+<a href="https://jogo-da-forca-nn87q9z6b-akoruudev.vercel.app/"><img width="600" src="./images/play now.png"></a>
 
 ### Tecnologias usadas
 <div style="display: inline_block"><br>
@@ -19,8 +19,10 @@ Projeto com a proposta inicial de criar um jogo da forca simples para se diverti
 #
 
 <div>
-    <img height="150px" src="./images/commit-ebook.png">
-    <img height="150px" src="./images/text-commit.png">
+    <a href="https://github.com/AkoruuDev/AkoruuDev/blob/main/padr%C3%A3oDeCommits.md">
+        <img height="150px" src="./images/commit-ebook.png">
+        <img height="150px" src="./images/text-commit.png">
+    </a>
 </div>
 
 ### Desktop View
