@@ -12,17 +12,23 @@ export default function Keyboard({kick, setTheseLetter}) {
     console.log(kick)
     return (
         <AlphabetConteiner>
-            {alphabet.map((letter, i) => <Alphabet key={i} letter={letter} setTheseLetter={setTheseLetter} />)}            
+            <Keys>
+            {alphabet.map((letter, i) => <Alphabet key={i} letter={letter} setTheseLetter={setTheseLetter} />)}
+            </Keys>
+            <ToKick>
+                <Input type='text' placeholder='já sei a palavra!' />
+                <Button>Chutar</Button>
+            </ToKick>          
         </AlphabetConteiner>
     )
 }
 
 const AlphabetConteiner = styled.div`
     width: 80vw;
-    height: 30vh;
+    height: 35vh;
 
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-evenly;
 
     position: fixed;
@@ -32,6 +38,51 @@ const AlphabetConteiner = styled.div`
     overflow: auto;
     &::-webkit-scrollbar {
         display: none;
+    }
+`
+
+const Keys = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+`
+
+const ToKick = styled.div`
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+`
+
+const Input = styled.input`
+    width: 70%;
+    height: 30px;
+    border-radius: 8px;
+    border: 1px solid gray;
+
+    padding: 0 8px;
+
+    &::placeholder {
+        font-style: italic;
+    }
+`
+
+const Button = styled.div`
+    width: 25%;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    background-color: yellowgreen;
+    font-weight: 700;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0 4px 8px 4px gray;
+        background-color: greenyellow;
     }
 `
 
