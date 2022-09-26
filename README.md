@@ -2,21 +2,26 @@
 
 Projeto com a proposta inicial de criar um jogo da forca simples para se divertir
 
-<a href="#"><img width="600" src="./images/play now.png"></a>
+<a href="jogo-da-forca-nn87q9z6b-akoruudev.vercel.app"><img width="600" src="./images/play now.png"></a>
 
 ### Tecnologias usadas
 <div style="display: inline_block"><br>
   <div style="justify-content: center;">
-    <img align="center" alt="react" height="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg ">
+    <img align="center" alt="react" height="120" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg ">
     <div style="flex-direction: collum;">
-        <img align="center" alt="Js" height="20" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg ">
-        <img align="center" alt="HTML" height="20" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg ">
-        <img align="center" alt="CSS" height="20" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg ">
+        <img align="center" alt="Js" height="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg ">
+        <img align="center" alt="HTML" height="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg ">
+        <img align="center" alt="CSS" height="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg ">
     </div>
   </div>
 </div>
 
-<img src="./images/commit-ebook.png">
+#
+
+<div>
+    <img height="150px" src="./images/commit-ebook.png">
+    <img height="150px" src="./images/text-commit.png">
+</div>
 
 ### Desktop View
 <div>
@@ -40,6 +45,6 @@ Projeto com a proposta inicial de criar um jogo da forca simples para se diverti
 *  <a href="https://www.github.com/akoruudev/" target="_blank"><img src="https://logodownload.org/wp-content/uploads/2019/08/github-logo-icon-0.png" height="15" target="_blank"> Perfil do GitHub</a>
 
 > Metadados
-*  <a href="#" ><img src="./images/metadados.png" /></a>
+<a href="https://github.com/AkoruuDev/Jogo-da-Forca/blob/main/docs/metadados.md" ><img height="150px" src="./images/metadados.png" /></a>
 
 </div>
