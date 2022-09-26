@@ -47,6 +47,7 @@ Projeto com a proposta inicial de criar um jogo da forca simples para se diverti
 *  <a href="https://www.github.com/akoruudev/" target="_blank"><img src="https://logodownload.org/wp-content/uploads/2019/08/github-logo-icon-0.png" height="15" target="_blank"> Perfil do GitHub</a>
 
 > Metadados
+<br>
 <a href="https://github.com/AkoruuDev/Jogo-da-Forca/blob/main/docs/metadados.md" ><img height="150px" src="./images/metadados.png" /></a>
 
 </div>
